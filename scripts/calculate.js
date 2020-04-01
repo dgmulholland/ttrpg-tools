@@ -6,7 +6,7 @@ wolfstagramCalculateButton.onclick = () => {
 
     // alert(curr_followers + ", " + cha + ", " + d20 + ", " +  d4);
     let likes = Math.floor(((d20 + cha)/100) * curr_followers);
-    let new_followers = Math.floor(((d4 * 10)/100) * likes);
+    let new_followers = Math.floor((1/d4) * likes);
 
     alert("Likes: " + likes + "\n" + "New Followers: " + new_followers + "\n" + "New Total Followers: " + (curr_followers + new_followers))
 
