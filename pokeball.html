@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokeball</title>
+</head>
+<body>
+    <form name="pokeballCalculatorForm">
+        <label for="level">Pokemon Level:</label><br>
+        <input type="number" min=0 id="level" name="level"><br>
+        <label for="sr">Pokemon S/R (as decimal):</label><br>
+        <input type="number" min=0 step=any id="sr" name="sr"><br>
+        <label for="hp">Pokemon Remaining HP:</label><br>
+        <input type="number" min=0 id="hp" name="hp"><br>
+        <input type="button" id="pokeballCalculateButton" value="Calculate DC">
+    </form>
+
+    <div id="calcOutput">
+
+    </div>
+
+    <script type="text/javascript" src="scripts/pokeballdc.js"></script>
+</body>
+</html>
